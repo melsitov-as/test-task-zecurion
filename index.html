@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Zecurion</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="page">
+    <div class="page-shadow-wrapper">
+      <header class="page-header">
+        <img
+          class="page-header__logo"
+          src="img/logo.svg"
+          alt="Логотип Zecurion"
+          width="230px"
+          height="51px"
+        />
+        <div class="page-header__username-wrapper">
+          <div class="page-header__user-icon-wrapper">
+            <img
+              class="page-header__user-icon"
+              src="img/icon-user.svg"
+              alt="Место для фото"
+              width="15px"
+              height="15px"
+            />
+          </div>
+          <p class="page-header__user-name">Имя Фамилия</p>
+          <img
+            class="page-header__exit-icon"
+            src="img/icon-exit.svg"
+            alt="Выйти"
+            width="15px"
+            height="15px"
+          />
+        </div>
+      </header>
+
+      <nav class="nav">
+        <div class="breadcrumbs"></div>
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__item-employees-link" href="#">Сотрудники</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__item-employee"
+              >Виктория Беляева, belyeva@companyname</span
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-wrapper">
+        <main class="main">
+          <h1 class="visually-hidden">Страница приложения</h1>
+          <section class="sidebar">
+            <h2 class="visually-hidden">Пользователи</h2>
+            <form class="sidebar__search" method="get" action="#">
+              <button class="user-nav__search-btn" type="submit"></button>
+              <input
+                class="sidebar__search-input"
+                id="search"
+                type="search"
+                name="search"
+                placeholder="Быстрый поиск..."
+              />
+              <label class="sidebar__search-label visually-hidden" for="search">
+                <span class="visually-hidden">Поиск:</span>
+              </label>
+            </form>
+            <ul class="sidebar__managers-list">
+              <li class="sidebar__managers-item on-leave offline">
+                <img
+                  class="sidebar__managers-photo"
+                  src="img/ivanova-photo.jpg"
+                  alt="Иванова"
+                  width="50px"
+                  height="50px"
+                />
+                <div class="sidebar__managers-wrapper">
+                  <p class="sidebar__managers-name">Анна Иванова</p>
+                  <p class="sidebar__managers-position">
+                    Менеджер, Отдел продаж
+                  </p>
+                </div>
+                <div class="sidebar__sales-wrapper">
+                  <p class="sidebar__managers-sales">12</p>
+                </div>
+              </li>
+              <ul class="sidebar__managers-list">
+                <li class="sidebar__managers-item on-holiday online">
+                  <img
+                    class="sidebar__managers-photo"
+                    src="img/belyaeva-photo.jpg"
+                    alt="Беляева"
+                    width="50px"
+                    height="50px"
+                  />
+                  <div class="sidebar__managers-wrapper">
+                    <p class="sidebar__managers-name">Виктория Беляева</p>
+                    <p class="sidebar__managers-position">
+                      Менеджер, Отдел продаж
+                    </p>
+                  </div>
+                  <div class="sidebar__sales-wrapper">
+                    <p class="sidebar__managers-sales">247</p>
+                  </div>
+                </li>
+                <li class="sidebar__managers-item offline">
+                  <img
+                    class="sidebar__managers-photo"
+                    src="img/surkov-photo.jpg"
+                    alt="Сурков"
+                    width="50px"
+                    height="50px"
+                  />
+                  <div class="sidebar__managers-wrapper">
+                    <p class="sidebar__managers-name">Виктор Сурков</p>
+                    <p class="sidebar__managers-position">
+                      Менеджер, Отдел продаж
+                    </p>
+                  </div>
+                  <div class="sidebar__sales-wrapper">
+                    <p class="sidebar__managers-sales">0</p>
+                  </div>
+                </li>
+              </ul>
+            </ul>
+          </section>
+          <section class="user">
+            <section class="user-data">
+              <h2 class="visually-hidden">Менеджер Виктория Беляева</h2>
+              <h3 class="visually-hidden">Статистика пользователя</h3>
+              <div class="user-data__user-wrapper">
+                <img
+                  class="user-data__manager-photo"
+                  src="img/belyaeva-photo.jpg"
+                  alt="Беляева"
+                  width="58px"
+                  height="58px"
+                />
+                <div class="user-data__user-text-wrapper">
+                  <p class="user-data__username">Виктория Беляева</p>
+                  <p class="user-data__user-position">Менеджер, Отдел продаж</p>
+                </div>
+              </div>
+              <p class="user-data__activity-history">
+                Последняя активность
+                <span class="user-data__activity-history-time"
+                  >сегодня в 12:22</span
+                >
+              </p>
+              <a class="user-data__to-employees-link" href="#">
+                <img
+                  class="user-data__arrow-icon"
+                  src="img/arrow-icon.svg"
+                  alt="Стрелка"
+                  width="12px"
+                  height="6px"
+                />
+                <span class="user-data__to-employees-text"
+                  >к списку сотрудников</span
+                >
+              </a>
+              <ul class="user-data__metrics-list">
+                <li class="user-data__metrics-item">
+                  <p class="user-data__metrics-text">Уровень риска</p>
+                  <div class="user-data__metrics-wrapper">
+                    <p class="user-data__metrics-numbers">157</p>
+                    <div class="user-data__percents-wrapper">
+                      <div
+                        class="user-data__metrics-arrow-container down-red"
+                      ></div>
+                      <p class="user-data__metrics-percents red">-100%</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="user-data__metrics-item">
+                  <p class="user-data__metrics-text">Продуктивность</p>
+                  <div class="user-data__metrics-wrapper">
+                    <p class="user-data__metrics-numbers">86%</p>
+                    <div class="user-data__percents-wrapper">
+                      <div
+                        class="user-data__metrics-arrow-container up-green"
+                      ></div>
+                      <p class="user-data__metrics-percents">+3%</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="user-data__metrics-item">
+                  <p class="user-data__metrics-text">Индекс активности</p>
+                  <div class="user-data__metrics-wrapper">
+                    <p class="user-data__metrics-numbers">2.4%</p>
+                    <div class="user-data__percents-wrapper">
+                      <div
+                        class="user-data__metrics-arrow-container up-red"
+                      ></div>
+                      <p class="user-data__metrics-percents">+14%</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="user-data__metrics-item user-data__metrics-icons">
+                  <ul class="user-data__icons-list">
+                    <li class="user-data__icons-item">
+                      <a class="user-data__icons-item-link" href="#">
+                        <img
+                          class="user-data__icons-img"
+                          src="img/check-icon.svg"
+                          alt="Галочка"
+                          width="18px"
+                          height="16px"
+                        />
+                      </a>
+                    </li>
+                    <li class="user-data__icons-item">
+                      <a class="user-data__icons-item-link" href="#">
+                        <img
+                          class="user-data__icons-img"
+                          src="img/camera-icon.svg"
+                          alt="Камера"
+                          width="20px"
+                          height="14px"
+                        />
+                      </a>
+                    </li>
+                    <li class="user-data__icons-item">
+                      <a class="user-data__icons-item-link" href="#">
+                        <img
+                          class="user-data__icons-img"
+                          src="img/monitor-icon.svg"
+                          alt="Монитор"
+                          width="22px"
+                          height="18px"
+                        />
+                      </a>
+                    </li>
+                    <li class="user-data__icons-item">
+                      <a class="user-data__icons-item-link" href="#">
+                        <img
+                          class="user-data__icons-img"
+                          src="img/lines-icon.svg"
+                          alt="Линии"
+                          width="21px"
+                          height="19px"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+            <section class="anomalies">
+              <h2 class="anomalies__title">Аномалии</h2>
+              <ul class="anomalies__list">
+                <li class="anomalies__item">
+                  Использование более одного аккаунта в соцсетях <br />
+                  или мессенджерах
+                </li>
+                <li class="anomalies__item">Первое использование устройства</li>
+                <li class="anomalies__item">Отсутствие более 40 дней</li>
+              </ul>
+            </section>
+
+            <section class="basic-indicators">
+              <h2 class="basic-indicators__title">Основные показатели</h2>
+              <div class="basic-indicators__data">
+                <p class="basic-indicators__data-text">Данные не найдены</p>
+              </div>
+            </section>
+            <section class="activity">
+              <h2 class="visually-hidden">Показатели активности</h2>
+              <ul class="activity__list">
+                <li class="activity__item">
+                  <h3 class="activity__item-title">Приложения и категории</h3>
+                  <table class="activity__table activity__table--apps">
+                    <tr class="activity__table-row">
+                      <th class="activity__table-header">
+                        <div class="activity__table-header-container">
+                          Категории приложений
+                        </div>
+                      </th>
+                      <th class="activity__table-header">
+                        <div class="activity__table-header-container">
+                          время
+                        </div>
+                      </th>
+                      <th class="activity__table-header">
+                        <div class="activity__table-header-container">%</div>
+                      </th>
+                      <th class="activity__table-header">
+                        <div class="activity__table-header-container">рост</div>
+                      </th>
+                    </tr>
+                    <tr class="activity__table-row">
+                      <td class="activity__table-column">
+                        <div class="colored-icon"></div>
+                        Мессенджеры
+                      </td>
+                      <td class="activity__table-column blue">20:55</td>
+                      <td class="activity__table-column">18</td>
+                      <td class="activity__table-column">+2%</td>
+                    </tr>
+                    <tr class="activity__table-row">
+                      <td class="activity__table-column">
+                        <div class="colored-icon"></div>
+                        Браузеры
+                      </td>
+                      <td class="activity__table-column blue">15:11</td>
+                      <td class="activity__table-column">12</td>
+                      <td class="activity__table-column">-3%</td>
+                    </tr>
+                    <tr class="activity__table-row">
+                      <td class="activity__table-column">
+                        <div class="colored-icon colored-icon--red"></div>
+                        Игры
+                      </td>
+                      <td class="activity__table-column blue">13:11</td>
+                      <td class="activity__table-column">7</td>
+                      <td class="activity__table-column">0</td>
+                    </tr>
+                  </table>
+                </li>
+                <li class="activity__item">
+                  <h3 class="activity__item-title">Сайты и категории</h3>
+                  <table class="activity__table activity__table--sites">
+                    <tr class="activity__table-row">
+                      <th class="activity__table-header">
+                        <div class="activity__table-header-container">
+                          Категории сайтов
+                        </div>
+                      </th>
+                      <th class="activity__table-header">
+                        <div class="activity__table-header-container">
+                          время
+                        </div>
+                      </th>
+                      <th class="activity__table-header">
+                        <div class="activity__table-header-container">%</div>
+                      </th>
+                      <th class="activity__table-header">
+                        <div class="activity__table-header-container">рост</div>
+                      </th>
+                    </tr>
+                    <tr class="activity__table-row">
+                      <td class="activity__table-column">
+                        <div class="colored-icon"></div>
+                        Поисковики
+                      </td>
+                      <td class="activity__table-column blue">20:55</td>
+                      <td class="activity__table-column">18</td>
+                      <td class="activity__table-column">+2%</td>
+                    </tr>
+                    <tr class="activity__table-row">
+                      <td class="activity__table-column">
+                        <div class="colored-icon colored-icon--green"></div>
+                        Новостные порталы
+                      </td>
+                      <td class="activity__table-column blue">15:11</td>
+                      <td class="activity__table-column">12</td>
+                      <td class="activity__table-column">-3%</td>
+                    </tr>
+                    <tr class="activity__table-row">
+                      <td class="activity__table-column">
+                        <div class="colored-icon colored-icon--green"></div>
+                        <div class="ellipsis-on">
+                          Сайты с неопределенным ...
+                        </div>
+                        <div class="ellipsis-off">
+                          Сайты с неопределенным наполнением
+                        </div>
+                      </td>
+                      <td class="activity__table-column blue">13:11</td>
+                      <td class="activity__table-column">7</td>
+                      <td class="activity__table-column">0</td>
+                    </tr>
+                  </table>
+                </li>
+                <li class="activity__item">
+                  <h3 class="activity__item-title">Дисциплина</h3>
+                  <table class="activity__table activity__table--discipline">
+                    <tr class="activity__table-row">
+                      <th class="activity__table-header">Дата</th>
+                      <th class="activity__table-header">
+                        Приход <br />
+                        на работу
+                      </th>
+                      <th class="activity__table-header">
+                        Уход <br />
+                        с работы
+                      </th>
+                      <th class="activity__table-header">
+                        Время <br />
+                        на работе
+                      </th>
+                    </tr>
+                    <tr class="activity__table-row">
+                      <td class="activity__table-column">29.02</td>
+                      <td
+                        class="activity__table-column activity__table-column--time"
+                      >
+                        08:46
+                        <div class="time-container time-container--red">
+                          +16 мин
+                        </div>
+                      </td>
+                      <td
+                        class="activity__table-column activity__table-column--time"
+                      >
+                        08:46
+                        <div class="time-container time-container--red">
+                          +16 мин
+                        </div>
+                      </td>
+                      <td
+                        class="activity__table-column activity__table-column--time"
+                      >
+                        09:06
+                        <div class="time-container time-container--green">
+                          +6 мин
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="activity__table-row">
+                      <td class="activity__table-column">28.02</td>
+                      <td
+                        class="activity__table-column activity__table-column--time"
+                      >
+                        08:27
+                        <div class="time-container time-container--green">
+                          -3 мин
+                        </div>
+                      </td>
+                      <td
+                        class="activity__table-column activity__table-column--time"
+                      >
+                        08:27
+                        <div class="time-container time-container--green">
+                          -3 мин
+                        </div>
+                      </td>
+                      <td
+                        class="activity__table-column activity__table-column--time"
+                      >
+                        08:36
+                        <div class="time-container time-container--red">
+                          -24 мин
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="activity__table-row">
+                      <td class="activity__table-column">25.02</td>
+                      <td
+                        class="activity__table-column activity__table-column--time"
+                      >
+                        08:42
+                        <div class="time-container time-container--red">
+                          +12 мин
+                        </div>
+                      </td>
+                      <td
+                        class="activity__table-column activity__table-column--time"
+                      >
+                        08:42
+                        <div class="time-container time-container--red">
+                          +12 мин
+                        </div>
+                      </td>
+                      <td
+                        class="activity__table-column activity__table-column--time"
+                      >
+                        08:36
+                        <div class="time-container time-container--red">
+                          -24 мин
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
